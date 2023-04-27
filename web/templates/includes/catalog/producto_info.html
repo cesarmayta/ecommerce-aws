@@ -1,0 +1,77 @@
+<div class="prod-tabs-wrap">
+    <ul class="prod-tabs">
+        <li id="prod-desc" class="active" data-prodtab-num="1">
+            <a data-prodtab="#prod-tab-1" href="#">Description</a>
+        </li>
+        <li data-prodtab-num="2" id="prod-props">
+            <a data-prodtab="#prod-tab-2" href="#">Additional information</a>
+        </li>
+        <li data-prodtab-num="3" id="prod-reviews">
+            <a data-prodtab="#prod-tab-3" href="#">Reviews (7)</a>
+        </li>
+        <li class="prod-tabs-addreview">Add a review</li>	</ul>
+    <div class="prod-tab-cont">
+        <p data-prodtab-num="1" class="prod-tab-mob active" data-prodtab="#prod-tab-1">Description</p>
+        <div class="prod-tab page-styling prod-tab-desc" id="prod-tab-1">
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        </div>
+        <p data-prodtab-num="2" class="prod-tab-mob" data-prodtab="#prod-tab-2">Additional information</p>
+        <div class="prod-tab" id="prod-tab-2">
+            <dl class="prod-tab-props">
+                <dt>Weight</dt>
+                <dd>1 kg</dd>
+                <dt>Dimensions</dt>
+                <dd>4 x 50 cm</dd>
+                <dt>Сolor</dt>
+                <dd><p><a href="#">Blue</a>, <a href="#">Green</a></p></dd>
+                <dt>Manufacturer</dt>
+                <dd><p><a href="#">Germany</a></p></dd>
+                <dt>Material</dt>
+                <dd><p><a href="#">Metall</a>, <a href="#">Plastic</a></p></dd>
+            </dl>
+        </div>
+        <p data-prodtab-num="3" class="prod-tab-mob" data-prodtab="#prod-tab-3">Reviews (7)</p>
+        <div class="prod-tab prod-reviews" id="prod-tab-3">
+            <div id="reviews">
+                <div id="review_form_wrapper" class="prod-addreview-form">
+                    <div id="review_form">
+                        <div id="respond" class="comment-respond">
+                            <p class="prod-tab-addreview" id="reply-title">Add a Review</p>
+                            <form action="#" method="post" id="commentform" class="comment-form">
+                                <div class="comment-form-rating">
+                                    <p class="stars"><span><a class="star-1" href="#">1</a><a class="star-2" href="#">2</a><a class="star-3" href="#">3</a><a class="star-4" href="#">4</a><a class="star-5" href="#">5</a></span></p>
+                                    <select>
+                                        <option value="">Rate…</option>
+                                        <option value="5">Perfect</option>
+                                        <option value="4">Good</option>
+                                        <option value="3">Average</option>
+                                        <option value="2">Not that bad</option>
+                                        <option value="1">Very Poor</option>
+                                    </select>
+                                </div>
+                                <textarea placeholder="Review"></textarea>
+                                <input type="submit" class="submit" value="Add a Review">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <ul id="comments">
+                    <li class="prod-review">
+                        <div>
+                            <h3>admin</h3>
+                            <p class="prod-review-rating" title="Rated 5 out of 5">
+                                <i class="rating-ico"></i>
+                                <i class="rating-ico"></i>
+                                <i class="rating-ico"></i>
+                                <i class="rating-ico"></i>
+                                <i class="rating-ico"></i>
+                                <time datetime="2017-05-09T14:16:55+00:00">May 9, 2017</time>
+                            </p>
+                            <p>Aliquam ligula quam, vehicula non porta at, venenatis ac purus. Pellentesque pharetra, turpis sit amet elementum faucibus, tellus nisi condimentum metus, nec scelerisque tortor velit ac purus. Aenean interdum velit quis nisi rhoncus ullamcorper. Cras lorem metus, imperdiet vel tortor vitae, malesuada pellentesque felis. Nulla varius mi a varius semper. Sed tristique ligula tincidunt pellentesque rhoncus. Praesent purus urna, imperdiet in pellentesque sed, hendrerit quis mauris. Maecenas consequat ultrices augue ac tempor. Etiam semper eu ligula id iaculis. Morbi scelerisque neque at velit porta, et fringilla nisl pulvinar. Duis at rhoncus est, nec cursus orci. Nunc malesuada tellus magna, in feugiat mauris placerat eu. Nullam elementum est id aliquam imperdiet.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

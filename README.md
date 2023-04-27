@@ -1,2 +1,1 @@
-# ecommerce-aws
-despliegue de ecommerce en aws
+#proyecto ecommerce

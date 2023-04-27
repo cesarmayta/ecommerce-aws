@@ -1,0 +1,30 @@
+<li class="h-cart">
+    <a class="cart-contents" href="/carrito">
+        <p class="h-cart-icon">
+            <i class="ion-android-cart"></i>
+            <span>{{request.session.cart.items|length}}</span>
+        </p>
+        <p class="h-cart-total">${{request.session.total}}</p>
+    </a>
+    <div class="widget_shopping_cart">
+        <div class="widget_shopping_cart_content">
+            <ul class="cart_list">
+                {% for key,value in request.session.cart.items %}
+                <li>
+                    <a href="#" class="remove">&times;</a>
+                    <a href="#">
+                        <img src="{{value.imagen}}" alt="">
+                        {{value.nombre}}
+                    </a>
+                    <span class="quantity">{{value.cantidad}} &times; ${{value.precio}}</span>
+                </li>
+                {% endfor %}
+            </ul>
+            <p class="total"><b>Subtotal:</b> ${{request.session.total}}</p>
+            <p class="buttons">
+                <a href="/carrito" class="button">Ver Carrito</a>
+                <a href="checkout.html" class="button">Comprar</a>
+            </p>
+        </div>
+    </div>
+</li>
